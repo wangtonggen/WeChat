@@ -11,6 +11,8 @@ class _FindPageState extends State<FindPage>{
 
   @override
   Widget build(BuildContext context) {
-
+    return Center(
+      child: Text("发现",style: TextStyle(color: Colors.greenAccent,fontSize: 30.0),),
+    );
   }
 }
