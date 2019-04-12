@@ -29,21 +29,18 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
         title: Text("微信"),
         actions: <Widget>[
-          IconButton(icon: Icon(Icons.add_circle_outline), onPressed: (){
-
-          })
+          IconButton(icon: Icon(Icons.add_circle_outline), onPressed: () {})
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
-//          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-//          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-//          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("微信")),
-          BottomNavigationBarItem(icon: Icon(Icons.comment),title: Text("通讯录")),
-          BottomNavigationBarItem(icon: Icon(Icons.find_replace),title: Text("发现")),
-          BottomNavigationBarItem(icon: Icon(Icons.person),title: Text("我")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.comment), title: Text("通讯录")),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.find_replace), title: Text("发现")),
+          BottomNavigationBarItem(icon: Icon(Icons.person), title: Text("我")),
         ],
         currentIndex: _selectedIndex,
         fixedColor: Colors.blue,
@@ -51,31 +48,6 @@ class _MainPageState extends State<MainPage> {
       ),
       body: widgets[_selectedIndex],
     );
-//    return Scaffold(
-//      appBar: AppBar(
-//        //导航栏
-//        title: Text("App Name"),
-//        actions: <Widget>[
-//          //导航栏右侧菜单
-//          IconButton(icon: Icon(Icons.share), onPressed: () {}),
-//        ],
-//      ),
-//      bottomNavigationBar: BottomNavigationBar(
-//        // 底部导航
-//        items: <BottomNavigationBarItem>[
-//          BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
-//          BottomNavigationBarItem(icon: Icon(Icons.business), title: Text('Business')),
-//          BottomNavigationBarItem(icon: Icon(Icons.school), title: Text('School')),
-//        ],
-//        currentIndex: _selectedIndex,
-//        fixedColor: Colors.blue,
-//        onTap: _onItemTap,
-//      ),
-//      floatingActionButton: FloatingActionButton(
-//          //悬浮按钮
-//          child: Icon(Icons.add),
-//          onPressed: _onAdd),
-//    );
   }
 
   void _onItemTap(int index) {
@@ -84,6 +56,4 @@ class _MainPageState extends State<MainPage> {
       print(_selectedIndex);
     });
   }
-
-  void _onAdd() {}
 }
