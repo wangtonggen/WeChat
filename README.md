@@ -1,6 +1,6 @@
 # wechat
 
-A new Flutter application.
+基于flutter开发仿微信的应用.
 
 ## Getting Started
 

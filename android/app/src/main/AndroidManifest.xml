@@ -14,8 +14,8 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="wechat"
-        android:icon="@mipmap/ic_launcher">
+        android:label="仿微信"
+        android:icon="@mipmap/ic_wechat">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -33,6 +33,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.VIEW"/>
             </intent-filter>
         </activity>
     </application>
