@@ -14,8 +14,9 @@ class MainPage extends StatefulWidget {
 ///主页面
 class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
-
-//  final TextStyle _style = new TextStyle(color: Colors.greenAccent,fontSize: 14.0);
+  Color iconColor = Colors.black;
+  final TextStyle titleStyle = TextStyle(fontSize: 20.0, color: Colors.black);
+  var title = "微信";
   final List<StatefulWidget> widgets = [
     new HomePage(),
     new AddressBookPage(),
@@ -27,10 +28,35 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("微信"),
-        actions: <Widget>[
-          IconButton(icon: Icon(Icons.add_circle_outline), onPressed: () {})
-        ],
+        backgroundColor: _selectedIndex != 3 ? Colors.grey : Colors.white,
+        title: Text(
+          title,
+          style: titleStyle,
+        ),
+        actions: _selectedIndex != 3
+            ? <Widget>[
+                IconButton(
+                    icon: Icon(
+                      Icons.search,
+                      color: iconColor,
+                    ),
+                    onPressed: () {}),
+                IconButton(
+                    icon: Icon(
+                      Icons.add_circle_outline,
+                      color: iconColor,
+                    ),
+                    onPressed: () {})
+              ]
+            : <Widget>[
+                IconButton(
+                  icon: Icon(
+                    Icons.camera_alt,
+                    color: iconColor,
+                  ),
+                  onPressed: () {},
+                )
+              ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
@@ -43,7 +69,7 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(icon: Icon(Icons.person), title: Text("我")),
         ],
         currentIndex: _selectedIndex,
-        fixedColor: Colors.blue,
+        fixedColor: Colors.green,
         onTap: _onItemTap,
       ),
       body: widgets[_selectedIndex],
@@ -53,6 +79,20 @@ class _MainPageState extends State<MainPage> {
   void _onItemTap(int index) {
     setState(() {
       _selectedIndex = index;
+      switch (_selectedIndex) {
+        case 0:
+          title = "微信";
+          break;
+        case 1:
+          title = "通讯录";
+          break;
+        case 2:
+          title = "发现";
+          break;
+        default:
+          title = "";
+          break;
+      }
       print(_selectedIndex);
     });
   }
