@@ -1,0 +1,38 @@
+{
+  "chat_list": [{
+    "name": "奔跑的一毛一",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "我是聊天的json串啊"
+  }, {
+    "name": "王大锤",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "快回消息"
+  }, {
+    "name": "王大锤",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "快回消息"
+  }, {
+    "name": "wtg",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "可以一起吃饭吗？"
+  }, {
+    "name": "wang",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "最近没空可以先预约"
+  }, {
+    "name": "tong",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "好困啊"
+  }, {
+    "name": "gen",
+    "image": "https:\/\/51che.oss-cn-hangzhou.aliyuncs.com\/partner\/app\/img\/20190416\/1555377949-849.jpg",
+    "time": "2019-04-19",
+    "message": "好长时间没运动了"
+  }]
+}
